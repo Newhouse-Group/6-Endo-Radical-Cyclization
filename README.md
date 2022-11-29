@@ -34,3 +34,30 @@ Y-randomization test and random data test.
 literature validation
 Prediction for Clovane substrate refinement
 Prediction for experimental validation
+
+
+
+Instructions for Using “extract_pdt.py” (the same for “extract_SM.py”)
+1.	System requirements
+This code is supported for macOS and Windows, and has been tested on the following systems:
+•	Windows 10 Pro 
+Python version 3.8 (64-bit)
+PyCharm 2020.3.2 (Community Edition)
+•	macOS Monterey (Version 12.1)
+Python version 3.8 (64-bit)
+PyCharm 2021.3.3 (Community Edition)
+
+2.	Installation guide
+Download and install the following programs:
+Python (>= 3.6) (Download at https://www.anaconda.com/download/)
+PyCharm (Download at https://www.jetbrains.com/lp/pycharm-anaconda/)
+Typical install time on a typical desktop computer: 10 mins.
+3.	Instructions for use
+(1)	Open “extract_pdt.py” in Pycharm and put the Gaussian output file (XX .out) in the same working directory. 
+(2)	Install relevant packages. This needs to be done once per computer.
+(3)	Run the code (shift + F10 in Windows or control + R in macOS) which will perform the following steps:
+Showing "Extract product data (6-membered ring)
+ What is the file name?:”
+Input the name of the “XX.out” file;
+Then input the label of each atom (atom 1 to 11) according to the rules shown in the supporting information (S120).
+Finally, the extracted descriptors would be written to the file “ML_pdt.csv”.
